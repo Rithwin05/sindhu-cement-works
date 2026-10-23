@@ -1,0 +1,221 @@
+{
+  "project_name": "Sindhu Cement Works",
+  "project_type": "Premium Industrial B2B Website & Catalogue",
+  "archetype": "Swiss & High-Contrast / Tactical Architectural Engineering",
+  "theme": {
+    "primary_mode": "Light base with Dark Graphite signature Hero and Sections",
+    "color_palette": {
+      "primary_graphite": "#252925",
+      "deep_charcoal": "#181B19",
+      "concrete_white": "#F5F3EE",
+      "pure_white": "#FFFFFF",
+      "concrete_grey": "#B9BBB5",
+      "secondary_text": "#696F68",
+      "safety_orange": "#D96C36",
+      "subtle_border": "#E3E3DC",
+      "dark_card_bg": "#1E221F",
+      "dark_border": "#323732"
+    },
+    "color_rules": {
+      "safety_orange_usage": "Reserved strictly for primary call-to-action buttons, active navigation indicators, small eyebrow tags, and high-priority status badges. NEVER use as a large background blanket.",
+      "gradient_policy": "NO bright gradients, neon effects, or glossy web2.0 gradients. Use solid tactile tones, matte surfaces, and subtle 1px mechanical borders.",
+      "contrast_policy": "Ensure all text meets APCA high-legibility standards. Dark Graphite (#252925) text on Concrete White (#F5F3EE) or Pure White (#FFFFFF), and Pure White text on Dark Graphite (#252925) surfaces."
+    }
+  },
+  "typography": {
+    "primary_font": "Manrope, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+    "mono_font": "'JetBrains Mono', 'Space Mono', 'Source Code Pro', monospace",
+    "hierarchy": {
+      "h1_hero": "text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.08]",
+      "h2_section": "text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight leading-tight",
+      "h3_card": "text-lg sm:text-xl font-semibold tracking-tight",
+      "eyebrow_label": "font-mono text-xs uppercase tracking-[0.2em] font-medium text-[#D96C36]",
+      "spec_data": "font-mono text-sm tracking-normal text-[#252925]",
+      "body_text": "text-base text-[#696F68] leading-relaxed",
+      "body_small": "text-sm text-[#696F68] leading-normal"
+    }
+  },
+  "layout_and_spacing": {
+    "spacing_scale": "Generous spacing philosophy: py-16 lg:py-24 for major sections; max-w-7xl px-4 sm:px-6 lg:px-8 for main containers.",
+    "bento_grid": "Asymmetric multi-span layout for product showcase (e.g., col-span-12 md:col-span-8 for primary spotlight card, col-span-12 md:col-span-4 for technical spec callout).",
+    "card_padding": "p-6 sm:p-8 internal padding on all bordered cards to prevent text-to-edge collision.",
+    "borders": "1px solid #E3E3DC in light sections, 1px solid #323732 in dark sections. Clean square or 4px subtle rounded corners (rounded-sm or rounded-md)."
+  },
+  "header_and_nav": {
+    "style": "Sticky top bar. Starts semi-transparent with dark graphite tint on hero, transitions into dense solid glass backdrop-blur-md bg-[#252925]/90 text-white border-b border-[#323732]/60 on scroll.",
+    "brand_mark": "Original geometric SVG logo: Heavy square manhole frame with inner concentric circle cover motif and SCW initials in crisp mono.",
+    "nav_items": [
+      { "label": "Catalogue", "href": "/products", "testid": "nav-link-products" },
+      { "label": "Applications", "href": "#applications", "testid": "nav-link-applications" },
+      { "label": "Spec & Tech", "href": "#specifications", "testid": "nav-link-specifications" },
+      { "label": "About SCW", "href": "/about", "testid": "nav-link-about" },
+      { "label": "Contact", "href": "/contact", "testid": "nav-link-contact" }
+    ],
+    "header_cta": {
+      "label": "Request a Quote",
+      "action": "open_quote_modal",
+      "style": "bg-[#D96C36] hover:bg-[#c25e2c] text-white px-5 py-2.5 rounded-sm font-semibold text-sm transition-colors",
+      "testid": "header-quote-button"
+    }
+  },
+  "key_features_and_components": {
+    "kinetic_hero": {
+      "bg": "#252925",
+      "eyebrow": "PRECAST CONCRETE PRODUCTS · TELANGANA",
+      "headline": "Built for the Groundwork.",
+      "subheadline": "Heavy-duty RCC manhole covers, precast drain channels, and custom concrete infrastructure products manufactured for durability, precision, and heavy load capacities.",
+      "ctas": [
+        { "label": "Request a Quote", "action": "open_quote_modal", "style": "bg-[#D96C36] text-white font-semibold hover:bg-[#c25e2c]", "testid": "hero-cta-quote" },
+        { "label": "Explore Products", "href": "/products", "style": "border border-[#B9BBB5]/40 text-white hover:bg-white/10", "testid": "hero-cta-explore" }
+      ],
+      "visual_element": "Asymmetric structural panel with high-resolution precast product render, engineering dimension markers, and live IS:12592 load rating badge."
+    },
+    "editorial_marquee": {
+      "type": "Slow kinetic horizontal drift",
+      "content": "IS:12592 COMPLIANT · M40 GRADE CONCRETE · HEAVY DUTY 35 TONNE LOAD CLASS · REINFORCED RCC PRECAST · SECUNDERABAD TELANGANA · CUSTOM FABRICATION",
+      "style": "bg-[#181B19] text-[#B9BBB5] py-3 text-xs font-mono uppercase tracking-[0.25em] border-y border-[#323732]"
+    },
+    "trust_credentials_strip": {
+      "items": [
+        { "stat": "M40 / M50", "label": "High-Strength Concrete Grade" },
+        { "stat": "IS:12592", "label": "Heavy-Duty BIS Compliance" },
+        { "stat": "35-40 Tonne", "label": "Extra Heavy Load Capacity" },
+        { "stat": "50,000+ Units", "label": "Supplied to Infrastructure Projects" }
+      ]
+    },
+    "product_catalogue": {
+      "categories": ["All Products", "Manhole Covers", "Drain Gratings", "U-Channels", "Inspection Slabs", "Kerb Blocks"],
+      "live_search": true,
+      "products": [
+        {
+          "id": "scw-mhc-01",
+          "name": "Heavy-Duty Circular Concrete Manhole Cover & Frame",
+          "category": "Manhole Covers",
+          "load_class": "EHD 35 Tonne (IS 12592)",
+          "dimensions": "600mm / 750mm Clear Opening",
+          "grade": "M40 Concrete + High Tensile TMT Reinforcement",
+          "image": "https://images.pexels.com/photos/29608836/pexels-photo-29608836.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          "summary": "Engineered for high-traffic municipal roads, industrial parks, and arterial highways with anti-skid surface pattern.",
+          "badge": "Best Seller"
+        },
+        {
+          "id": "scw-tdg-02",
+          "name": "Rectangular Precast Trench Drain Cover & Grating",
+          "category": "Drain Gratings",
+          "load_class": "Heavy Commercial 25 Tonne",
+          "dimensions": "1000mm x 300mm x 75mm",
+          "grade": "M40 Grade Fiber Reinforced",
+          "image": "https://images.unsplash.com/photo-1740484708120-86a447d6ca6c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDR8MHwxfHNlYXJjaHwxfHxwcmVjYXN0JTIwY29uY3JldGUlMjBkcmFpbiUyMG1hbmhvbGUlMjBjb25zdHJ1Y3Rpb24lMjBpbmZyYXN0cnVjdHVyZSUyMHNpdGV8ZW58MHx8fHwxNzkyNzU0MjI2fDA&ixlib=rb-4.1.0&q=85",
+          "summary": "Perforated high-flow stormwater discharge channel covers designed for factories, logistics hubs, and commercial complexes.",
+          "badge": "High Flow"
+        },
+        {
+          "id": "scw-uch-03",
+          "name": "Precast Heavy Commercial U-Drain & Cable Channel",
+          "category": "U-Channels",
+          "load_class": "Standard & Heavy Duty Surcharge",
+          "dimensions": "450mm x 450mm Internal Cross-Section",
+          "grade": "M50 High Density Vibration Cast",
+          "image": "https://images.unsplash.com/photo-1647569696141-8672c75ec386?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDR8MHwxfHNlYXJjaHwyfHxwcmVjYXN0JTIwY29uY3JldGUlMjBkcmFpbiUyMG1hbmhvbGUlMjBjb25zdHJ1Y3Rpb24lMjBpbmZyYXN0cnVjdHVyZSUyMHNpdGV8ZW58MHx8fHwxNzkyNzU0MjI2fDA&ixlib=rb-4.1.0&q=85",
+          "summary": "Monolithic modular U-drain blocks providing rapid site installation and uniform hydraulic flow efficiency.",
+          "badge": "Modular"
+        },
+        {
+          "id": "scw-isc-04",
+          "name": "Precast Concrete Sump & Inspection Chamber Ring",
+          "category": "Inspection Slabs",
+          "load_class": "Medium / Heavy Duty Surcharge",
+          "dimensions": "900mm Diameter Ring / Slab",
+          "grade": "M40 Waterproofed Concrete Mix",
+          "image": "https://images.unsplash.com/photo-1531963428572-1a7029153f96?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDR8MHwxfHNlYXJjaHwzfHxwcmVjYXN0JTIwY29uY3JldGUlMjBkcmFpbiUyMG1hbmhvbGUlMjBjb25zdHJ1Y3Rpb24lMjBpbmZyYXN0cnVjdHVyZSUyMHNpdGV8ZW58MHx8fHwxNzkyNzU0MjI2fDA&ixlib=rb-4.1.0&q=85",
+          "summary": "Interlocking chamber rings for underground sewage access, electrical cable junction boxes, and rainwater harvesting sumps.",
+          "badge": "Interlocking"
+        },
+        {
+          "id": "scw-kbd-05",
+          "name": "Custom Industrial Kerb Drain Block & Slotted Grating",
+          "category": "Kerb Blocks",
+          "load_class": "Commercial Highway Load",
+          "dimensions": "500mm Length Kerb Integrated",
+          "grade": "M40 Structural Cast",
+          "image": "https://images.unsplash.com/photo-1649320317663-634a6b9257a9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDR8MHwxfHNlYXJjaHw0fHxwcmVjYXN0JTIwY29uY3JldGUlMjBkcmFpbiUyMG1hbmhvbGUlMjBjb25zdHJ1Y3Rpb24lMjBpbmZyYXN0cnVjdHVyZSUyMHNpdGV8ZW58MHx8fHwxNzkyNzU0MjI2fDA&ixlib=rb-4.1.0&q=85",
+          "summary": "Dual-purpose roadside kerb channel with continuous inlet slots for urban road gutters and industrial facility perimeters.",
+          "badge": "Custom Fit"
+        }
+      ]
+    },
+    "quotation_builder_modal": {
+      "title": "B2B Project Quotation Builder",
+      "steps": [
+        "1. Select Products & Quantity",
+        "2. Technical & Site Requirements",
+        "3. Company Details",
+        "4. Review & Submit"
+      ],
+      "fields": {
+        "step_1": ["Product selection", "Quantity (Units / Running Meters)", "Custom Dimensions checkbox"],
+        "step_2": ["Site location (Telangana / AP / Other)", "Load capacity requirement (Light / Medium / Heavy Duty 35T)", "Target delivery timeline"],
+        "step_3": ["Company Name", "GSTIN (Optional)", "Contact Person Name", "Mobile Number", "Email Address"],
+        "step_4": ["Enquiry Reference Generation SCW-2026-XXXX", "Instant WhatsApp copy share option"]
+      }
+    },
+    "whatsapp_and_mobile_bar": {
+      "whatsapp_floating_btn": {
+        "phone": "+919849012345",
+        "message": "Hello Sindhu Cement Works, I would like to inquire about RCC precast products for my project.",
+        "style": "fixed bottom-6 right-6 z-40 bg-[#25D366] text-white p-4 rounded-full shadow-xl hover:scale-105 transition-transform"
+      },
+      "mobile_bottom_bar": {
+        "visible_on": "md:hidden",
+        "actions": [
+          { "label": "Call Us", "href": "tel:+919849012345", "icon": "Phone", "testid": "mobile-action-call" },
+          { "label": "WhatsApp", "href": "https://wa.me/919849012345", "icon": "MessageSquare", "testid": "mobile-action-whatsapp" },
+          { "label": "Get Quote", "action": "open_quote_modal", "icon": "FileText", "highlight": true, "testid": "mobile-action-quote" }
+        ]
+      }
+    }
+  },
+  "media_and_images": {
+    "product_spotlight_hero": "https://images.pexels.com/photos/29608836/pexels-photo-29608836.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "drain_grating_panel": "https://images.unsplash.com/photo-1740484708120-86a447d6ca6c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDR8MHwxfHNlYXJjaHwxfHxwcmVjYXN0JTIwY29uY3JldGUlMjBkcmFpbiUyMG1hbmhvbGUlMjBjb25zdHJ1Y3Rpb24lMjBpbmZyYXN0cnVjdHVyZSUyMHNpdGV8ZW58MHx8fHwxNzkyNzU0MjI2fDA&ixlib=rb-4.1.0&q=85",
+    "u_channel_infrastructure": "https://images.unsplash.com/photo-1647569696141-8672c75ec386?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDR8MHwxfHNlYXJjaHwyfHxwcmVjYXN0JTIwY29uY3JldGUlMjBkcmFpbiUyMG1hbmhvbGUlMjBjb25zdHJ1Y3Rpb24lMjBpbmZyYXN0cnVjdHVyZSUyMHNpdGV8ZW58MHx8fHwxNzkyNzU0MjI2fDA&ixlib=rb-4.1.0&q=85",
+    "inspection_manhole_ring": "https://images.unsplash.com/photo-1531963428572-1a7029153f96?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDR8MHwxfHNlYXJjaHwzfHxwcmVjYXN0JTIwY29uY3JldGUlMjBkcmFpbiUyMG1hbmhvbGUlMjBjb25zdHJ1Y3Rpb24lMjBpbmZyYXN0cnVjdHVyZSUyMHNpdGV8ZW58MHx8fHwxNzkyNzU0MjI2fDA&ixlib=rb-4.1.0&q=85",
+    "construction_site_earthwork": "https://images.pexels.com/photos/37139286/pexels-photo-37139286.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "image_treatment_rules": "All photos must be set inside warm concrete-white panels (#F5F3EE) with subtle 1px border (#E3E3DC) or graphite overlays (#252925/40). Never warp or distort product aspect ratios. Use object-cover with explicit height constraints."
+  },
+  "motion_and_interactivity": {
+    "library": "framer-motion + lenis smooth scroll",
+    "animations": {
+      "headline_reveal": "Masked line-by-line Y-translation stagger (duration 0.7s, ease [0.16, 1, 0.3, 1])",
+      "card_hover": "Subtle border highlight shift from #E3E3DC to #D96C36 and slight lift -translate-y-1 transition duration 200ms",
+      "fade_up_section": "Opacity 0 to 1, Y 20px to 0px viewport scroll trigger once"
+    }
+  },
+  "testing_and_accessibility": {
+    "data_testid_rules": "Mandatory on all clickable items, search inputs, modal triggers, product filter tabs, and form submission buttons.",
+    "key_testids": [
+      "header-brand-logo",
+      "nav-link-products",
+      "nav-link-about",
+      "nav-link-contact",
+      "header-quote-button",
+      "hero-cta-quote",
+      "hero-cta-explore",
+      "catalogue-search-input",
+      "catalogue-filter-all",
+      "catalogue-filter-manhole",
+      "catalogue-filter-gratings",
+      "product-card-scw-mhc-01",
+      "product-card-scw-tdg-02",
+      "quote-modal-next-step",
+      "quote-modal-submit-btn",
+      "whatsapp-floating-button",
+      "faq-accordion-item-1"
+    ]
+  },
+  "instructions_to_main_agent": {
+    "core_directive": "Build an award-winning, engineered B2B industrial website for Sindhu Cement Works using React, Tailwind CSS, and Framer Motion. Ensure dark graphite (#252925) and warm concrete white (#F5F3EE) set an authentic architectural tone, while Safety Orange (#D96C36) provides tactical contrast for primary actions.",
+    "file_structure": "Ensure complete multi-page navigation and rich modals: Home, /products, 5 Product Detail Views, Quotation Builder Modal, About, and Contact pages.",
+    "no_mock_failure": "Implement functional React state management for live product filtering, search, quotation builder multi-step form, and lightbox."
+  }
+}
