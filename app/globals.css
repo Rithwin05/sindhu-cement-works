@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --background: 0 0% 100%;
+        --foreground: 0 0% 3.9%;
+        --card: 0 0% 100%;
+        --card-foreground: 0 0% 3.9%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 0 0% 3.9%;
+        --primary: 0 0% 9%;
+        --primary-foreground: 0 0% 98%;
+        --secondary: 0 0% 96.1%;
+        --secondary-foreground: 0 0% 9%;
+        --muted: 0 0% 96.1%;
+        --muted-foreground: 0 0% 45.1%;
+        --accent: 0 0% 96.1%;
+        --accent-foreground: 0 0% 9%;
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 0 0% 89.8%;
+        --input: 0 0% 89.8%;
+        --ring: 0 0% 3.9%;
+        --radius: 0.5rem;
+
+        --scw-graphite: #252925;
+        --scw-charcoal: #181B19;
+        --scw-concrete: #F5F3EE;
+        --scw-smoke: #B9BBB5;
+        --scw-steel: #696F68;
+        --scw-safety: #D96C36;
+        --scw-line: #E3E3DC;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+    body {
+        @apply bg-concrete text-graphite font-sans antialiased;
+        text-rendering: optimizeLegibility;
+    }
+    ::selection {
+        background: var(--scw-safety);
+        color: #fff;
+    }
+    :focus-visible {
+        outline: 2px solid var(--scw-safety);
+        outline-offset: 2px;
+    }
+}
+
+@layer components {
+    .eyebrow {
+        @apply font-mono text-[11px] font-medium uppercase tracking-[0.22em];
+    }
+    .container-scw {
+        @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-12;
+    }
+    .btn-primary {
+        @apply inline-flex items-center justify-center gap-2 bg-safety px-6 py-3.5 text-sm font-semibold text-white transition-colors duration-200 hover:bg-[#c35d2c] disabled:cursor-not-allowed disabled:opacity-60;
+    }
+    .btn-outline-light {
+        @apply inline-flex items-center justify-center gap-2 border border-white/25 px-6 py-3.5 text-sm font-semibold text-white transition-colors duration-200 hover:border-white/60 hover:bg-white/5;
+    }
+    .btn-outline-dark {
+        @apply inline-flex items-center justify-center gap-2 border border-graphite/25 px-6 py-3.5 text-sm font-semibold text-graphite transition-colors duration-200 hover:border-graphite hover:bg-graphite hover:text-concrete;
+    }
+    .field-input {
+        @apply w-full border border-line bg-white px-4 py-3 text-sm text-graphite placeholder:text-steel/60 transition-colors duration-150 focus:border-safety focus:outline-none;
+    }
+    .field-label {
+        @apply mb-1.5 block font-mono text-[11px] font-medium uppercase tracking-[0.18em] text-steel;
+    }
+    .field-error {
+        @apply mt-1.5 text-xs font-medium text-[#B3402A];
+    }
+}
+
+/* Film-grain texture overlay for dark hero surfaces */
+.grain::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.05;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Slow editorial marquee */
+@keyframes scw-marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+.animate-marquee {
+    animation: scw-marquee 46s linear infinite;
+}
+.marquee-mask {
+    mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+}
+
+/* Blueprint grid lines on dark sections */
+.grid-lines {
+    background-image:
+        linear-gradient(to right, rgba(245, 243, 238, 0.045) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(245, 243, 238, 0.045) 1px, transparent 1px);
+    background-size: 72px 72px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .animate-marquee { animation: none; }
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
